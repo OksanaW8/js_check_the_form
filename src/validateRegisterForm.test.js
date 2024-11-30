@@ -27,7 +27,7 @@ describe(`Function 'validateRegisterForm':`, () => {
   });
 
   // write more tests here
-  it(`should return error for invalid email and valid passowd`, () => {
+  it(`should return error for invalid email and valid password`, () => {
     const invalidPassword = validateRegisterForm('tesmail.com', 'Pa$1ssword');
 
     expect(invalidPassword.code).toBe(422);
